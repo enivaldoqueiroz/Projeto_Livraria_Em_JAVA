@@ -4,7 +4,7 @@ public class Livro {
  
 	String nome;
 	String descricao;
-	double valor;
+	private double valor;
 	String isbn;
 	String dataDeLancamento;
 	Autor autor;
@@ -46,6 +46,15 @@ public class Livro {
 			System.out.println(" ");
 		}
 		
+	}
+	
+	
+	public double getValor() {
+		return valor;
+	}
+	
+	public void setValor(double valor) {
+		this.valor = valor;
 	}
 	
 	
