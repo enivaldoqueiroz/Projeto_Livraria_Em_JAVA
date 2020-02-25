@@ -2,15 +2,15 @@ package Livraria;
 
 public class Livro {
  
-	String nome;
-	String descricao;
+	private String nome;
+	private String descricao;
 	private double valor;
-	String isbn;
-	String dataDeLancamento;
-	Autor autor;
+	private String isbn; 
+	private String dataDeLancamento;
+	private Autor autor;
 	
 	public Livro() {
-		System.out.println("Novo livro criado");
+		System.out.println("Novo livro criado"); 
 	}
 	
 	
@@ -57,5 +57,33 @@ public class Livro {
 		this.valor = valor;
 	}
 	
+	public String getNome() {
+		return nome;
+	}
 	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	 
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+		
+	}
+	
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+	
+	public Autor getAutor() {
+		return autor;
+	}
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
 }
