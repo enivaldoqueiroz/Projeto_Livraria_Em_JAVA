@@ -1,4 +1,8 @@
-package Livraria;
+package br.com.ccodigo.livraria.teste;
+
+import br.com.ccodigo.livraria.produtos.Livro;
+import br.com.ccodigo.livraria.produtos.Produto;
+import br.com.ccodigo.livraria.produtos.Promocional;
 
 public class CarrinhoDeCompras implements Promocional{
 	

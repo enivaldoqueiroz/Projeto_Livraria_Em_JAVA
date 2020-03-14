@@ -1,4 +1,6 @@
-package Livraria;
+package br.com.ccodigo.livraria.produtos;
+
+import br.com.ccodigo.livraria.Autor;
 
 public class LivroFisico extends Livro implements Promocional{
 	

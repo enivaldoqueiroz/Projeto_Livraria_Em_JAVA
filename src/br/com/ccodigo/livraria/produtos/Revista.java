@@ -1,4 +1,6 @@
-package Livraria;
+package br.com.ccodigo.livraria.produtos;
+
+import br.com.ccodigo.livraria.Editora;
 
 public class Revista implements Produto, Promocional{
 	

@@ -1,4 +1,8 @@
-package Livraria;
+package br.com.ccodigo.livraria.teste;
+
+import br.com.ccodigo.livraria.Autor;
+import br.com.ccodigo.livraria.produtos.Ebook;
+import br.com.ccodigo.livraria.produtos.LivroFisico;
 
 public class RegistroDeVendas {
 	

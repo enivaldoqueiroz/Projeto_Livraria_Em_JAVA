@@ -1,4 +1,4 @@
-package Livraria;
+package br.com.ccodigo.livraria;
 
 public class Editora {
 	

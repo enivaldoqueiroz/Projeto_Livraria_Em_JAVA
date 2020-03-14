@@ -1,4 +1,4 @@
-package Livraria;
+package br.com.ccodigo.livraria.produtos;
 
 public interface Produto {
 	
