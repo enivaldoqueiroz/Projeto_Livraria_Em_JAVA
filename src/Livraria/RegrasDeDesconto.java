@@ -12,7 +12,7 @@ public class RegrasDeDesconto {
 		Livro livro = new MiniLivro(autor);
 		livro.setValor(39.90);
 		
-		if(!livro.aplicarDescontoDe(0.3)) {
+		if(livro.aplicarDescontoDe(0.3)) {
 			System.out.println("Desconto no livro não pode ser maior do que 30%");
 		} else {
 			System.out.println("Valor do livro com desconto: " + livro.getValor());

@@ -10,10 +10,17 @@ public class RegistroDeVendas {
 		fisico.setNome("Test-Driven Development");
 		fisico.setValor(59.90);
 		
+		if(fisico.aplicarDescontoDe10Porcento()) {
+			System.out.println("Valor agora é " + fisico.getValor());
+		}
+				
 		Ebook ebook = new Ebook(autor);
 		ebook.setNome("Test-Driven Development");
 		ebook.setValor(29.90);
-		//ebook.getWaterMark();
+		
+		if(fisico.aplicarDescontoDe10Porcento()) {
+			System.out.println("Valor agora é " + fisico.getValor());
+		}
 		
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 		carrinho.adiciona(fisico);

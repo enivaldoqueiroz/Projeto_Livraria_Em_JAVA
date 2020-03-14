@@ -1,6 +1,6 @@
 package Livraria;
 
-public class CarrinhoDeCompras {
+public class CarrinhoDeCompras implements Promocional{
 	
 	private double total;
 	
@@ -17,5 +17,11 @@ public class CarrinhoDeCompras {
 	public void adiciona(Produto produto) {
 		System.out.println("Adiiona: " + produto);
 		this.total += produto.getValor();
+	}
+
+	@Override
+	public boolean aplicarDescontoDe(double porcentagem) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

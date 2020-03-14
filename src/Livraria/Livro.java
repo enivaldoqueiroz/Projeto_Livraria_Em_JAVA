@@ -107,6 +107,8 @@ public abstract class Livro implements Produto {
 	public void setImpresso(boolean impresso) {
 		this.impresso = impresso;
 	}
+
+	protected abstract boolean aplicarDescontoDe(double d);
 	
 	/*public void adiciona(Livro livro) {
 		Ebook ebook = (Ebook) livro;
