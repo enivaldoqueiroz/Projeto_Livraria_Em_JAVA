@@ -105,4 +105,10 @@ public class Livro {
 	public void setImpresso(boolean impresso) {
 		this.impresso = impresso;
 	}
+	
+	public void adiciona(Livro livro) {
+		Ebook ebook = (Ebook) livro;
+		ebook.getWaterMark();
+		System.out.println("Adicionando:" + livro );
+	}
 }
