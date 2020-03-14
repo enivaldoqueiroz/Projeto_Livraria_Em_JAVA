@@ -1,6 +1,6 @@
 package Livraria;
 
-public abstract class Livro {
+public abstract class Livro implements Produto {
  
 	private String nome;
 	private String descricao;
@@ -45,7 +45,7 @@ public abstract class Livro {
 		return this.autor != null;
 	}
   
-	public abstract boolean aplicarDescontoDe(double porcentagem);
+	//public abstract boolean aplicarDescontoDe(double porcentagem);
 	
 	/*public boolean aplicarDescontoDe(double porcentagem) {
 		System.out.println("Valor atual: " + this.valor);

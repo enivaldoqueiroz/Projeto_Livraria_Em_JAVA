@@ -1,6 +1,6 @@
 package Livraria;
 
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional{
 	
 	
 	private String waterMark;
@@ -17,11 +17,13 @@ public class Ebook extends Livro {
 	}
 
 	
+	
+
 	@Override
 	public boolean aplicarDescontoDe(double porcentagem) {
 		if (porcentagem > 0.15) {
 			return false;
 		}
-		return false;
+		return true;
 	}
 }
