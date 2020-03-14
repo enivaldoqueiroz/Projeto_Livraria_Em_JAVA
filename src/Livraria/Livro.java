@@ -44,8 +44,10 @@ public abstract class Livro {
 		
 		return this.autor != null;
 	}
-
-	public boolean aplicarDescontoDe(double porcentagem) {
+  
+	public abstract boolean aplicarDescontoDe(double porcentagem);
+	
+	/*public boolean aplicarDescontoDe(double porcentagem) {
 		System.out.println("Valor atual: " + this.valor);
 		if (porcentagem > 0.3) {
 			System.out.println("Desconto não pode ser maior do que 30%");
@@ -58,7 +60,7 @@ public abstract class Livro {
 		System.out.println(" ");
 		return true;
 		
-	}
+	}*/
 	
 	
 	public double getValor() {
