@@ -24,7 +24,7 @@ public class CadrastroDeLivros {
 						
 		//livro.setAutor(autor);
 		
-		livro.motrarDetalhes();
+		livro.mostrarDetalhes();
 		
 		livro.aplicarDescontoDe(0.3);
 		

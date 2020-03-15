@@ -1,6 +1,7 @@
 package br.com.ccodigo.livraria.produtos;
 
 import br.com.ccodigo.livraria.Autor;
+import br.com.ccodigo.livraria.exception.AutorNuloException;
 
 public abstract class Livro implements Produto {
  
@@ -13,7 +14,9 @@ public abstract class Livro implements Produto {
 	private boolean impresso;
 	
 	public Livro(Autor autor) {
-		
+		if(autor == null) {
+			throw new AutorNuloException("O autor do livro não pode ser nulo");
+		}
 		this.autor = autor;
 		this.isbn = "000-00-00000-00-o";
 		this.impresso = true;
